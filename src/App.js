@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
+import Contact from './components/Contact';
+import Container from './components/Container';
+import Files from './components/Files';
+import Image from './components/Image';
+import Navbar from './components/Navbar';
+import Skills from './components/Skills';
+import Slider from './components/Slider';
+import Table from './components/Table';
+import {Switch,Route,Link , Routes} from "react-router-dom";
+ 
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+  <Navbar/>
+    <Routes>
+    <Route path='/'  element={<Slider/>}></Route>
+    <Route path='/files'  element={<Files/>}></Route>
+    <Route path='/skills'  element={<Skills/>}></Route>
+    <Route path='/contact'  element={<Contact/>}></Route>
+    </Routes>
+
+
+
+
+
+
+
+
+
+
+{/*     
+    <Navbar/>
+    <Slider/>
+    <Files/>
+    <Skills/>
+    <Contact/> */}
+    {/* <Container/> */}
+    {/* <Image/> */}
+    {/* <Table/> */}
+     
+    </>
+  )
 }
 
-export default App;
+export default App
