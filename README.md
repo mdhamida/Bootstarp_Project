@@ -1,4 +1,4 @@
-# output 
+# output snapshot
 
 ![boot1](https://user-images.githubusercontent.com/88300530/162601226-353bcb86-51de-4d7d-ace4-b601708c436f.png)
 
@@ -10,4 +10,4 @@
 ![bbot4](https://user-images.githubusercontent.com/88300530/162601381-147771d7-dd57-45d4-9cc8-5a3beedf6351.png)
 
 
-# done......................................
+# done....
